@@ -11,6 +11,7 @@
 		4C28B14521C0B19D0057832C /* my_first_sample_pod_hung_anhTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28B14421C0B19D0057832C /* my_first_sample_pod_hung_anhTests.swift */; };
 		4C28B14721C0B19D0057832C /* my_first_sample_pod_hung_anh.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C28B13921C0B19D0057832C /* my_first_sample_pod_hung_anh.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C28B15121C0B33C0057832C /* my-first-sample-pod-hung-anh.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 4C28B15021C0B33C0057832C /* my-first-sample-pod-hung-anh.podspec */; };
+		4C28B15521C0B7EF0057832C /* my_auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28B15421C0B7EF0057832C /* my_auth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		4C28B14421C0B19D0057832C /* my_first_sample_pod_hung_anhTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = my_first_sample_pod_hung_anhTests.swift; sourceTree = "<group>"; };
 		4C28B14621C0B19D0057832C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C28B15021C0B33C0057832C /* my-first-sample-pod-hung-anh.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "my-first-sample-pod-hung-anh.podspec"; sourceTree = "<group>"; };
+		4C28B15421C0B7EF0057832C /* my_auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = my_auth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		4C28B13821C0B19D0057832C /* my-first-sample-pod-hung-anh */ = {
 			isa = PBXGroup;
 			children = (
+				4C28B15221C0B7C90057832C /* Classes */,
 				4C28B13921C0B19D0057832C /* my_first_sample_pod_hung_anh.h */,
 				4C28B13A21C0B19D0057832C /* Info.plist */,
 			);
@@ -87,6 +90,22 @@
 				4C28B14621C0B19D0057832C /* Info.plist */,
 			);
 			path = "my-first-sample-pod-hung-anhTests";
+			sourceTree = "<group>";
+		};
+		4C28B15221C0B7C90057832C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4C28B15321C0B7DE0057832C /* Auth */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4C28B15321C0B7DE0057832C /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				4C28B15421C0B7EF0057832C /* my_auth.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +170,7 @@
 				TargetAttributes = {
 					4C28B13521C0B19D0057832C = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					4C28B13E21C0B19D0057832C = {
 						CreatedOnToolsVersion = 10.1;
@@ -198,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C28B15521C0B7EF0057832C /* my_auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +366,7 @@
 		4C28B14B21C0B19D0057832C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -362,6 +384,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "cybozu.my-first-sample-pod-hung-anh";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -370,6 +393,7 @@
 		4C28B14C21C0B19D0057832C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -395,6 +419,7 @@
 		4C28B14E21C0B19D0057832C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XC7HL6P8HV;
 				INFOPLIST_FILE = "my-first-sample-pod-hung-anhTests/Info.plist";
@@ -413,6 +438,7 @@
 		4C28B14F21C0B19D0057832C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XC7HL6P8HV;
 				INFOPLIST_FILE = "my-first-sample-pod-hung-anhTests/Info.plist";
