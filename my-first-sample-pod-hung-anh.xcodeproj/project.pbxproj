@@ -12,6 +12,8 @@
 		4C28B14721C0B19D0057832C /* my_first_sample_pod_hung_anh.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C28B13921C0B19D0057832C /* my_first_sample_pod_hung_anh.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C28B15121C0B33C0057832C /* my-first-sample-pod-hung-anh.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 4C28B15021C0B33C0057832C /* my-first-sample-pod-hung-anh.podspec */; };
 		4C28B15521C0B7EF0057832C /* my_auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28B15421C0B7EF0057832C /* my_auth.swift */; };
+		4C28B15721C0BE690057832C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4C28B15621C0BE690057832C /* README.md */; };
+		4C28B15921C0BE8E0057832C /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 4C28B15821C0BE8E0057832C /* CHANGELOG.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 		4C28B14621C0B19D0057832C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C28B15021C0B33C0057832C /* my-first-sample-pod-hung-anh.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "my-first-sample-pod-hung-anh.podspec"; sourceTree = "<group>"; };
 		4C28B15421C0B7EF0057832C /* my_auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = my_auth.swift; sourceTree = "<group>"; };
+		4C28B15621C0BE690057832C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4C28B15821C0BE8E0057832C /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 		4C28B12C21C0B19D0057832C = {
 			isa = PBXGroup;
 			children = (
+				4C28B15821C0BE8E0057832C /* CHANGELOG.md */,
+				4C28B15621C0BE690057832C /* README.md */,
 				4C28B15021C0B33C0057832C /* my-first-sample-pod-hung-anh.podspec */,
 				4C28B13821C0B19D0057832C /* my-first-sample-pod-hung-anh */,
 				4C28B14321C0B19D0057832C /* my-first-sample-pod-hung-anhTests */,
@@ -200,6 +206,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C28B15721C0BE690057832C /* README.md in Resources */,
+				4C28B15921C0BE8E0057832C /* CHANGELOG.md in Resources */,
 				4C28B15121C0B33C0057832C /* my-first-sample-pod-hung-anh.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
